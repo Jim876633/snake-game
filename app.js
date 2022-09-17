@@ -21,7 +21,7 @@ function start() {
     const snakeSpace = 5;
 
     const widthMultiple = parseInt(field.value);
-    const heightMultiple = 20;
+    const heightMultiple = 18;
 
     const initialX = (snakeSize + snakeSpace) * Math.floor(widthMultiple / 2);
     const initialY = (snakeSize + snakeSpace) * Math.floor(heightMultiple / 2);
@@ -195,7 +195,8 @@ function start() {
         dotPosition = randomPosition();
         collision = false;
         startGame = true;
-        text.textContent = "score : ";
+        score = 0;
+        text.textContent = "snake game";
     }
 
     function againGame() {
