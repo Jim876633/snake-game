@@ -9,9 +9,17 @@ body {
     border: 1px solid black;
     margin: auto;
 }
-.againButton {
+.button {
+    display: none;
+    justify-content: center;
+}
+.button.show {
+    display: flex;
+}
+.againButton,
+.restartButton {
     display: block;
-    margin: 2rem auto;
+    margin: 2rem;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 1rem;
@@ -19,13 +27,39 @@ body {
     color: black;
     font-size: 2rem;
     transition: all 0.2s;
-    display: none;
 }
-.againButton.show {
-    display: block;
-}
-.againButton:hover {
+
+.againButton:hover,
+.startButton:hover,
+.restartButton:hover {
     background: rgb(250, 65, 65);
     color: white;
     cursor: pointer;
+}
+.startButton {
+    display: inline-block;
+    background: rgba(250, 65, 65, 0.8);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+select,
+label {
+    font-size: 2rem;
+}
+select {
+    margin: 2rem;
+}
+h1 {
+    font-size: 5rem;
+    margin: 1rem;
+}
+.home,
+.game {
+    display: none;
+}
+.show {
+    display: block;
 }
