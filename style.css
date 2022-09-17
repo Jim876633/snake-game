@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+#canvas {
+    border: 1px solid black;
+    margin: auto;
+}
+.againButton {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background: rgba(250, 65, 65, 0.8);
+    color: black;
+    font-size: 2rem;
+    transition: all 0.2s;
+    display: none;
+}
+.againButton.show {
+    display: block;
+}
+.againButton:hover {
+    background: rgb(250, 65, 65);
+    color: white;
+    cursor: pointer;
+}
